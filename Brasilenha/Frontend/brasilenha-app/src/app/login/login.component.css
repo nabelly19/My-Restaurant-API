@@ -1,0 +1,67 @@
+
+.fundo{
+    background-image: url("../../assets/image.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover; 
+    -ms-background-size: cover; 
+    -o-background-size: cover;
+    background-size: cover;
+
+    width: 99.99vw;
+    height: 99.99vh;
+
+    position: absolute;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+    
+.card {
+    width: 29rem;
+    height: 35rem;
+    margin-top: 8%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-color: #463e31;
+    border-radius: 4%;
+    /* background-color: #463e31; */
+    background: rgb(108,96,76);
+    background: radial-gradient(circle, rgba(108,96,76,1) 5%, rgba(107,95,75,1) 32%, rgba(70,62,49,1) 72%);
+}
+
+.card-header {
+    font-family: 'Alegreya Sans', sans-serif;
+    background: none;
+    color: rgb(207, 207, 207);
+    font-size: xx-large;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 0%;
+}
+
+label {
+    color: rgb(207, 207, 207);
+}
+
+input:focus {
+    background-color:  #e6e6e6;
+    outline: none;
+    border: none;
+}
+
+.btn {
+    background-color: #eacda3 ;
+    font-weight: bold;
+}
+
+.card-imagem{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem{
+    width: 140px;
+    height: 90px;
+    
+}

@@ -1,0 +1,29 @@
+.navbar {
+    background-color: #463e31;
+    height: 140px;
+}
+
+.brand-marca {
+    width: 250px;
+    height: 155px;
+}
+
+.dropdown{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 80%;
+}
+
+.nav-link{
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+.nav-link:hover{
+    color: burlywood;
+}
+
+
+
