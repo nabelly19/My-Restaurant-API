@@ -1,17 +1,17 @@
 .navbar {
     background-color: #463e31;
-    height: 140px;
 }
 
 .brand-marca {
-    width: 250px;
-    height: 155px;
+    width: 50%;
+    height: auto;
+    margin-left: 7%;
 }
 
 .dropdown{
     display: flex;
     justify-content: flex-end;
-    margin-left: 80%;
+    margin-left: 73%;
 }
 
 .nav-link{
@@ -27,16 +27,621 @@
 
 .carousel{
     display: flex;
-    justify-content: baseline;
     align-self: flex-end;
-    margin-left: 5%;
-    margin-top: 3.2%;
-    width: 800px;
+    width: 100%;
     
 }
 
 .carousel img {
-    width: 800px;
-    height: 700px;
+    width: 100%;
+    height:700px;
     border-radius: 10px;
+    object-fit: fill;
+    opacity: 0.5;
 }
+
+/* BOTOES */
+
+.btn-totem-acces {
+    
+    display: flex;
+    justify-content: baseline;
+}
+
+/* 
+BOTAO ACESSAR TOTEM */
+
+#btn-totem {
+    position: relative;
+    width: 97%;
+    opacity: 0.8;
+    height: 130px;
+    padding: 0;
+    border: none;
+    background-image: url("../../assets/totem.png");
+}
+
+#btn-totem .background-image {
+    content: "";
+    background-image: url("../../assets/totem.png");
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#btn-totem span {
+    font-family: 'Alegreya Sans', sans-serif;
+    letter-spacing: 2px;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 6%;
+    font-size: 45px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    text-shadow: -0.09em 0.01em 0.2em rgba(0, 0, 0, 0.712);
+}
+
+#btn-totem:before,
+#btn-totem:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+     background:  #463e31;
+    transition: all 0.3s ease;
+  }
+#btn-totem:before {
+    height: 0%;
+    width: 2px;
+  }
+#btn-totem:after {
+    width: 0%;
+    height: 2px;
+  }
+#btn-totem:hover{
+    background: transparent;
+    box-shadow: none;
+  }
+#btn-totem:hover:before {
+    height: 100%;
+  }
+#btn-totem:hover:after {
+    width: 100%;
+  }
+#btn-totem span:hover{
+     color:  #463e31;
+     text-shadow: none;
+  }
+#btn-totem span:before,
+#btn-totem span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+     background:  #463e31;
+    transition: all 0.3s ease;
+    text-shadow: none;
+  }
+#btn-totem span:before {
+    width: 2px;
+    height: 0%;
+    text-shadow: none;
+  }
+#btn-totem span:after {
+    width: 0%;
+    height: 2px;
+    text-shadow: none;
+  }
+#btn-totem span:hover:before {
+    height: 100%;
+    text-shadow: none;
+  }
+#btn-totem span:hover:after {
+    width: 100%;
+    text-shadow: none;
+  }
+
+  /* BOTAO ACESSAR PEDIDOS */
+
+  #btn-pedidos {
+    position: relative;
+    width: 97%;
+    opacity: 0.9;
+    height: 130px;
+    padding: 0;
+    border: none;
+    background-image: url("../../assets/pedido.avif");
+}
+
+#btn-pedidos .background-image {
+    content: "";
+    background-image: url("../../assets/pedido.avif");
+    filter: blur(0.1em);
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#btn-pedidos span {
+    font-family: 'Alegreya Sans', sans-serif;
+    letter-spacing: 2px;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 6%;
+    font-size: 45px;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    text-shadow: 0.01em 0.1em 0.1em rgba(0, 0, 0, 0.425);
+}
+
+#btn-pedidos:before,
+#btn-pedidos:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+     background:  #463e31;
+    transition: all 0.3s ease;
+  }
+#btn-pedidos:before {
+    height: 0%;
+    width: 2px;
+  }
+#btn-pedidos:after {
+    width: 0%;
+    height: 2px;
+  }
+#btn-pedidos:hover{
+    background: transparent;
+    box-shadow: none;
+  }
+#btn-pedidos:hover:before {
+    height: 100%;
+  }
+#btn-pedidos:hover:after {
+    width: 100%;
+  }
+#btn-pedidos span:hover{
+     color:  #463e31;
+     text-shadow: none;
+  }
+
+#btn-pedidos span:before,
+#btn-pedidos span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+     background:  #463e31;
+    transition: all 0.3s ease;
+    text-shadow: none;
+  }
+#btn-pedidos span:before {
+    width: 2px;
+    height: 0%;
+    text-shadow: none;
+  }
+#btn-pedidos span:after {
+    width: 0%;
+    height: 2px;
+    text-shadow: none;
+  }
+#btn-pedidos span:hover:before {
+    height: 100%;
+    text-shadow: none;
+  }
+#btn-pedidos span:hover:after {
+    width: 100%;
+    text-shadow: none;
+  }
+
+/* BOTAO CARDAPIO */
+
+#btn-cardapio {
+    position: relative;
+    width: 97%;
+    opacity: 0.9;
+    height: 130px;
+    padding: 0;
+    border: none;
+    background-image: url("../../assets/cardápio5.png");
+}
+
+#btn-cardapio .background-image {
+    content: "";
+    background-image: url("../../assets/cardápio5.png");
+    filter: blur(0.1em);
+    opacity: 0.6;
+    position: absolute;
+    object-fit: fill;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#btn-cardapio span {
+    font-family: 'Alegreya Sans', sans-serif;
+    letter-spacing: 2px;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 6%;
+    font-size: 45px;
+    font-weight: bolder;
+    color: rgb(255, 228, 198);
+    text-shadow: 0.01em 0.01em 0.2em rgb(0, 0, 0);
+}
+
+#btn-cardapio:before,
+#btn-cardapio:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+     background:  #463e31;
+    transition: all 0.3s ease;
+  }
+#btn-cardapio:before {
+    height: 0%;
+    width: 2px;
+  }
+#btn-cardapio:after {
+    width: 0%;
+    height: 2px;
+  }
+#btn-cardapio:hover{
+    background: transparent;
+    box-shadow: none;
+  }
+#btn-cardapio:hover:before {
+    height: 100%;
+  }
+#btn-cardapio:hover:after {
+    width: 100%;
+  }
+#btn-cardapio span:hover{
+     color:  #463e31;
+     text-shadow: none;
+  }
+
+#btn-cardapio span:before,
+#btn-cardapio span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+     background:  #463e31;
+    transition: all 0.3s ease;
+    text-shadow: none;
+  }
+#btn-cardapio span:before {
+    width: 2px;
+    height: 0%;
+    text-shadow: none;
+  }
+#btn-cardapio span:after {
+    width: 0%;
+    height: 2px;
+    text-shadow: none;
+  }
+#btn-cardapio span:hover:before {
+    height: 100%;
+    text-shadow: none;
+  }
+#btn-cardapio span:hover:after {
+    width: 100%;
+    text-shadow: none;
+  }
+
+  @media screen and (min-width: 1280px) and (max-width: 1300px){
+    .carousel img {
+        
+        height:500px;
+        
+    }
+
+    #btn-pedidos span {
+        font-family: 'Alegreya Sans', sans-serif;
+        letter-spacing: 2px;
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 10%;
+        font-size: 45px;
+        font-weight: bolder;
+        color: rgb(0, 0, 0);
+        text-shadow: 0.01em 0.1em 0.4em rgba(255, 255, 255, 0.781);
+    }
+
+    #btn-totem span {
+        font-family: 'Alegreya Sans', sans-serif;
+        letter-spacing: 2px;
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 10%;
+        font-size: 45px;
+        font-weight: bolder;
+        color: rgb(255, 255, 255);
+        text-shadow: -0.09em 0.01em 0.3em rgba(0, 0, 0, 0.877);
+    }
+
+    #btn-cardapio span {
+        font-family: 'Alegreya Sans', sans-serif;
+        letter-spacing: 2px;
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 10%;
+        font-size: 45px;
+        font-weight: bolder;
+        color: rgb(255, 228, 198);
+        text-shadow: 0.01em 0.01em 0.2em rgb(0, 0, 0);
+    }
+    
+}
+
+@media screen and (min-width: 501px) and (max-width: 1042px){
+    .carousel img {
+        
+        height:400px;
+        
+    }
+
+    #btn-pedidos span {
+        font-family: 'Alegreya Sans', sans-serif;
+        letter-spacing: 2px;
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 10%;
+        font-size: 45px;
+        font-weight: bolder;
+        color: rgb(0, 0, 0);
+        text-shadow: 0.01em 0.1em 0.4em rgba(255, 255, 255, 0.781);
+    }
+
+    #btn-totem span {
+        font-family: 'Alegreya Sans', sans-serif;
+        letter-spacing: 2px;
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 10%;
+        font-size: 45px;
+        font-weight: bolder;
+        color: rgb(255, 255, 255);
+        text-shadow: -0.09em 0.01em 0.3em rgba(0, 0, 0, 0.877);
+    }
+
+    #btn-cardapio span {
+        font-family: 'Alegreya Sans', sans-serif;
+        letter-spacing: 2px;
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 10%;
+        font-size: 45px;
+        font-weight: bolder;
+        color: rgb(255, 228, 198);
+        text-shadow: 0.01em 0.01em 0.2em rgb(0, 0, 0);
+    }
+    
+}
+
+@media screen and (min-width: 414px ) and (max-width: 500px) {
+    .carousel img {
+        
+        height:400px;
+        
+    }
+
+    #btn-pedidos span {
+        font-family: 'Alegreya Sans', sans-serif;
+        letter-spacing: 2px;
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 10%;
+        font-size: 45px;
+        font-weight: bolder;
+        color: rgb(0, 0, 0);
+        text-shadow: 0.01em 0.1em 0.4em rgba(255, 255, 255, 0.781);
+    }
+
+    #btn-totem span {
+        font-family: 'Alegreya Sans', sans-serif;
+        letter-spacing: 2px;
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 10%;
+        font-size: 45px;
+        font-weight: bolder;
+        color: rgb(255, 255, 255);
+        text-shadow: -0.09em 0.01em 0.3em rgba(0, 0, 0, 0.877);
+    }
+
+    #btn-cardapio span {
+        font-family: 'Alegreya Sans', sans-serif;
+        letter-spacing: 2px;
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 10%;
+        font-size: 45px;
+        font-weight: bolder;
+        color: rgb(255, 228, 198);
+        text-shadow: 0.01em 0.01em 0.2em rgb(0, 0, 0);
+    }
+    
+
+
+  
+ 
+}
+
+@media screen and (min-width: 360px) and (max-width: 413px){
+    .carousel img {
+        
+        height:400px;
+        
+    }
+
+    #btn-pedidos span {
+        font-family: 'Alegreya Sans', sans-serif;
+        letter-spacing: 2px;
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 10%;
+        font-size: 45px;
+        font-weight: bolder;
+        color: rgb(0, 0, 0);
+        text-shadow: 0.01em 0.1em 0.4em rgba(255, 255, 255, 0.781);
+    }
+
+    #btn-totem span {
+        font-family: 'Alegreya Sans', sans-serif;
+        letter-spacing: 2px;
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 10%;
+        font-size: 45px;
+        font-weight: bolder;
+        color: rgb(255, 255, 255);
+        text-shadow: -0.09em 0.01em 0.3em rgba(0, 0, 0, 0.877);
+    }
+
+    #btn-cardapio span {
+        font-family: 'Alegreya Sans', sans-serif;
+        letter-spacing: 2px;
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 10%;
+        font-size: 45px;
+        font-weight: bolder;
+        color: rgb(255, 228, 198);
+        text-shadow: 0.01em 0.01em 0.2em rgb(0, 0, 0);
+    }
+    
+}
+
+@media screen and (max-width: 280px) {
+    .carousel img {
+        
+        height:400px;
+        
+    }
+
+    #btn-pedidos span {
+        font-family: 'Alegreya Sans', sans-serif;
+        letter-spacing: 2px;
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 10%;
+        font-size: 45px;
+        font-weight: bolder;
+        color: rgb(0, 0, 0);
+        text-shadow: 0.01em 0.1em 0.4em rgba(255, 255, 255, 0.781);
+    }
+
+    #btn-totem span {
+        font-family: 'Alegreya Sans', sans-serif;
+        letter-spacing: 2px;
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 10%;
+        font-size: 45px;
+        font-weight: bolder;
+        color: rgb(255, 255, 255);
+        text-shadow: -0.09em 0.01em 0.3em rgba(0, 0, 0, 0.877);
+    }
+
+    #btn-cardapio span {
+        font-family: 'Alegreya Sans', sans-serif;
+        letter-spacing: 2px;
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 10%;
+        font-size: 45px;
+        font-weight: bolder;
+        color: rgb(255, 228, 198);
+        text-shadow: 0.01em 0.01em 0.2em rgb(0, 0, 0);
+    }
+    
+  }
+
+
+
+
