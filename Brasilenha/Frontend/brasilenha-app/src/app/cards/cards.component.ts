@@ -1,15 +1,15 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+
 @Component({
-  selector: 'app-navbar',
+  selector: 'app-cards',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.css'
+  templateUrl: './cards.component.html',
+  styleUrl: './cards.component.css'
 })
-export class NavbarComponent {
+export class CardsComponent {
   @Input()
-  tituloDaNav: string = "";
-
+  imagem_card: string = "";
 }

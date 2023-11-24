@@ -1,17 +1,17 @@
 .navbar {
     background-color: #463e31;
-    height: 140px;
 }
 
 .brand-marca {
-    width: 250px;
-    height: 155px;
+    width: 50%;
+    height: auto;
+    margin-left: 7%;
 }
 
 .dropdown{
     display: flex;
     justify-content: flex-end;
-    margin-left: 80%;
+    margin-left: 73%;
 }
 
 .nav-link{
@@ -24,6 +24,4 @@
 .nav-link:hover{
     color: burlywood;
 }
-
-
 

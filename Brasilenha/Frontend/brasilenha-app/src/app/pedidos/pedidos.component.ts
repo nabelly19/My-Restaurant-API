@@ -3,12 +3,13 @@ import { CommonModule } from '@angular/common';
 import { NavbarComponent } from '../navbar/navbar.component';
 
 @Component({
-  selector: 'app-totem',
+  selector: 'app-pedidos',
   standalone: true,
   imports: [CommonModule, NavbarComponent],
-  templateUrl: './totem.component.html',
-  styleUrl: './totem.component.css'
+  templateUrl: './pedidos.component.html',
+  styleUrl: './pedidos.component.css'
 })
-export class TotemComponent {
+export class PedidosComponent {
+ titulo: string = "Pedidos";
 
 }

@@ -2,14 +2,14 @@ import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-navbar',
+  selector: 'app-cardapio',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.css'
+  templateUrl: './cardapio.component.html',
+  styleUrl: './cardapio.component.css'
 })
-export class NavbarComponent {
+export class CardapioComponent {
   @Input()
-  tituloDaNav: string = "";
+  nomeDoCard: string = ""
 
 }

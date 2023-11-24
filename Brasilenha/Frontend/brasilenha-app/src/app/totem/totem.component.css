@@ -1,3 +1,7 @@
+a {
+  text-decoration: none;
+}
+
 .navbar {
     background-color: #463e31;
 }
@@ -443,7 +447,7 @@ BOTAO ACESSAR TOTEM */
         align-items: center;
         justify-content: center;
         padding: 10%;
-        font-size: 45px;
+        font-size: 40px;
         font-weight: bolder;
         color: rgb(255, 255, 255);
         text-shadow: -0.09em 0.01em 0.3em rgba(0, 0, 0, 0.877);
@@ -561,7 +565,7 @@ BOTAO ACESSAR TOTEM */
         align-items: center;
         justify-content: center;
         padding: 10%;
-        font-size: 45px;
+        font-size: 40px;
         font-weight: bolder;
         color: rgb(255, 255, 255);
         text-shadow: -0.09em 0.01em 0.3em rgba(0, 0, 0, 0.877);
@@ -586,10 +590,22 @@ BOTAO ACESSAR TOTEM */
 }
 
 @media screen and (max-width: 280px) {
-    .carousel img {
+    .carousel {
         
-        height:400px;
+        display: none;
         
+    }
+
+    #btn-pedidos {
+      width: 70%;
+    }
+
+    #btn-cardapio {
+      width: 70%;
+    }
+
+    #btn-totem {
+      width: 70%;
     }
 
     #btn-pedidos span {
@@ -602,7 +618,7 @@ BOTAO ACESSAR TOTEM */
         align-items: center;
         justify-content: center;
         padding: 10%;
-        font-size: 45px;
+        font-size: 25px;
         font-weight: bolder;
         color: rgb(0, 0, 0);
         text-shadow: 0.01em 0.1em 0.4em rgba(255, 255, 255, 0.781);
@@ -618,7 +634,7 @@ BOTAO ACESSAR TOTEM */
         align-items: center;
         justify-content: center;
         padding: 10%;
-        font-size: 45px;
+        font-size: 25px;
         font-weight: bolder;
         color: rgb(255, 255, 255);
         text-shadow: -0.09em 0.01em 0.3em rgba(0, 0, 0, 0.877);
@@ -634,7 +650,7 @@ BOTAO ACESSAR TOTEM */
         align-items: center;
         justify-content: center;
         padding: 10%;
-        font-size: 45px;
+        font-size: 25px;
         font-weight: bolder;
         color: rgb(255, 228, 198);
         text-shadow: 0.01em 0.01em 0.2em rgb(0, 0, 0);
