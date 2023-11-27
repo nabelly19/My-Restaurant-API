@@ -12,4 +12,9 @@ import { CommonModule } from '@angular/common';
 export class CardsComponent {
   @Input()
   imagem_card: string = "";
+  @Input()
+  id: string = "";
+  
+  dataBsTarget: string = '"data-bs-target=' + this.id + '"';
+  ariaControls: string = '"aria-controls="' + this.id + '"';
 }

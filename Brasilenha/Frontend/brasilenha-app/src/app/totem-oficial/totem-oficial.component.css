@@ -1,3 +1,5 @@
+
+
 .carousel{
     display: flex;
     align-self: flex-end;
@@ -12,3 +14,40 @@
     object-fit: fill;
     opacity: 0.5;
 }
+
+.linha {
+    background-color: red;
+    height: 60px;
+    width: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    padding: 2%;
+}
+
+p {
+    padding: auto;
+    color: aliceblue;
+    font-weight: bolder;
+    font-family: 'Alegreya Sans', sans-serif;
+    letter-spacing: 2px;
+}
+
+.conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vh;
+    height: 100vh;
+    background-color: #c5ad86;
+    margin-top: 20%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    overflow: auto;
+    justify-content: space-between;
+}
+
+.invisible-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+

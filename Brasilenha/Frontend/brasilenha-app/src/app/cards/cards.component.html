@@ -7,28 +7,30 @@
     </div>
   </div> -->
 
-  <div class="card mt-5" style="width: 18rem;">
+  <div class="card mt-5" style="width: 14rem;">
     <img src="../../assets/cardápio.png" class="img" alt="ImagemdoCardapio">
     <div class="card-body">
       <h5 class="card-title mx-auto">Card title</h5>
 
       <div class="accordion mt-3" id="accordionPanelsStayOpenExample">
+
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+            <button class="accordion-button" type="button" [attr.data-bs-target]="'#' + id" data-bs-toggle="collapse" aria-expanded="true" [attr.aria-controls]="id">
               Cupons
             </button>
           </h2>
-          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+          <div id="{{id}}" class="accordion-collapse collapse show">
             <div class="accordion-body">
              num tem
             </div>
           </div>
         </div>
+
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-              Accordion Item #2
+              Informações
             </button>
           </h2>
           <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
@@ -40,7 +42,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-              Accordion Item #3
+              Preço R$
             </button>
           </h2>
           <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
