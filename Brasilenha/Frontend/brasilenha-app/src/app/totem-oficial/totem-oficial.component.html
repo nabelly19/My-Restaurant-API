@@ -3,7 +3,7 @@
       <div class="col-12 mt-5 mx-auto col-md-6">
         <div
         id="carouselExampleAutoplaying"
-        class="carousel slide"
+        class="carousel mx-auto slide"
         data-bs-ride="carousel"
       >
         <div class="carousel-inner">
@@ -36,19 +36,26 @@
     </div>
 
     <div class="linha">
-      <p>AAAAAAAAAAAAAAAAAAAAAAAA</p>
+      <p>CONFIRÁ JÁ AS NOVAS OPÇÕES DE NOSSO CARDÁPIO </p>
     </div>
 
-    <div class="conteudo">
-    <app-cards [id]="'elem1'"></app-cards>
-    <app-cards [id]="'elem2'"></app-cards>
-    <app-cards [id]="'elem3'"></app-cards>
-    <app-cards [id]="'elem4'"></app-cards>
+      <form class="d-flex mt-5" role="search">
+        <input class="form-control me-3" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-secondary" type="submit">Search</button>
+      </form>
 
-    <app-cards></app-cards>
-    <app-cards></app-cards>
-    <app-cards></app-cards>
-    <app-cards></app-cards>
+    <div class="conteudo">
+    <app-cards [id]="'elem1'" ></app-cards>
+    <app-cards [id]="'elem2'" ></app-cards>
+    <app-cards [id]="'elem3'" ></app-cards>
+
+    <app-cards [id]="'elem4'" ></app-cards>
+    <app-cards [id]="'elem5'"></app-cards>
+    <app-cards [id]="'elem6'"></app-cards>
+
+    <app-cards [id]="'elem7'"></app-cards>
+    <app-cards [id]="'elem8'"></app-cards>
+    <app-cards [id]="'elem9'"></app-cards>
 
     </div>
     

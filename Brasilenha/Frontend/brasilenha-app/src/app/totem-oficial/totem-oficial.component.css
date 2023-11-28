@@ -2,7 +2,7 @@
 
 .carousel{
     display: flex;
-    align-self: flex-end;
+    align-items: center;
     width: 100%;
     
 }
@@ -40,14 +40,12 @@ p {
     width: 100vh;
     height: 100vh;
     background-color: #c5ad86;
-    margin-top: 20%;
+    margin-top: 5%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     overflow: auto;
     justify-content: space-between;
 }
 
-.invisible-scrollbar::-webkit-scrollbar {
-    display: none;
-  }
+
 

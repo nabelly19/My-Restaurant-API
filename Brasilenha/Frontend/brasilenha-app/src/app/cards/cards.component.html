@@ -1,58 +1,74 @@
-<!-- <div class="card" style="width: 18rem;">
-    <img [src]="imagem_card" class="img" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div> -->
+<div class="card mt-5" style="width: 18rem">
+  <img src="../../assets/background.png" class="img" alt="ImagemdoCardapio" />
+  <div class="card-body">
 
-  <div class="card mt-5" style="width: 14rem;">
-    <img src="../../assets/cardápio.png" class="img" alt="ImagemdoCardapio">
-    <div class="card-body">
-      <h5 class="card-title mx-auto">Card title</h5>
+    <h5 class="card-title mx-auto">Card title</h5>
 
-      <div class="accordion mt-3" id="accordionPanelsStayOpenExample">
+    <div class="accordion mt-3" id="accordionPanelsStayOpenExample">
 
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button" type="button" [attr.data-bs-target]="'#' + id" data-bs-toggle="collapse" aria-expanded="true" [attr.aria-controls]="id">
-              Cupons
-            </button>
-          </h2>
-          <div id="{{id}}" class="accordion-collapse collapse show">
-            <div class="accordion-body">
-             num tem
-            </div>
-          </div>
-        </div>
-
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-              Informações
-            </button>
-          </h2>
-          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-            <div class="accordion-body">
-              aaa
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-              Preço R$
-            </button>
-          </h2>
-          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-            <div class="accordion-body">
-              kkkkk
-            </div>
-          </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button"
+            type="button"
+            [attr.data-bs-target]="'#' + id"
+            data-bs-toggle="collapse"
+            aria-expanded="true"
+            [attr.aria-controls]="id"
+          >
+            Cupons
+          </button>
+        </h2>
+        <div id="{{ id }}" class="accordion-collapse collapse show">
+          <div class="accordion-body">num tem</div>
         </div>
       </div>
 
-      <a href="#" class="btn mt-5 mb-2 mx-auto"><i class="bi bi-cart3"></i></a>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            [attr.data-bs-target]="'#' +id + 'content2'"
+            aria-expanded="false"
+            [attr.aria-controls]="id + 'content2'"
+          >
+            Informações
+          </button>
+        </h2>
+        <div
+          id ="{{id + 'content2'}}"
+          class="accordion-collapse collapse"
+        >
+          <div class="accordion-body">Prato feito com carne de gato refinado</div>
+        </div>
+      </div>
+
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            [attr.data-bs-target]="'#' + id + 'content3'"
+            aria-expanded="false"
+            [attr.aria-controls]="id + 'content3'"
+          >
+            Preço R$
+          </button>
+        </h2>
+        <div
+        id ="{{id + 'content3'}}"
+          class="accordion-collapse collapse"
+        >
+          <div class="accordion-body">R$ 5.000.000,00</div>
+        </div>
+      </div>
     </div>
+
+    <a href="#" class="btn mt-5 mb-2 mx-auto"><i class="bi bi-cart3"></i></a>
   </div>
+</div>

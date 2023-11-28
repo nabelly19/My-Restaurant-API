@@ -14,6 +14,8 @@ export class CardsComponent {
   imagem_card: string = "";
   @Input()
   id: string = "";
+  @Input()
+  content2: string = "";
   
   dataBsTarget: string = '"data-bs-target=' + this.id + '"';
   ariaControls: string = '"aria-controls="' + this.id + '"';
