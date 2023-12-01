@@ -12,3 +12,7 @@ h1{
     font-weight: bolder;
     text-shadow: -0.0001em 0.1em 0.2em rgba(0, 0, 0, 0.514);
 }
+
+.voltar{
+    margin-right: 17%;
+}

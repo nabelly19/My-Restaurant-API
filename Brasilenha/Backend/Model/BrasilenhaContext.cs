@@ -29,7 +29,7 @@ public partial class BrasilenhaContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Data Source=CT-C-001YM\\SQLEXPRESS01;Initial Catalog=brasilenha;Integrated Security=True;TrustServerCertificate=true");
+        => optionsBuilder.UseSqlServer("Data Source=CT-C-001YM\\SQLEXPRESS01;Initial Catalog=Brasilenha;Integrated Security=True;TrustServerCertificate=true");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -41,6 +41,7 @@ public partial class BrasilenhaContext : DbContext
 
             entity.Property(e => e.Id).HasColumnName("ID");
             entity.Property(e => e.Codigo)
+                .IsRequired()
                 .HasMaxLength(12)
                 .IsUnicode(false);
         });
@@ -52,6 +53,7 @@ public partial class BrasilenhaContext : DbContext
             entity.ToTable("Imagem");
 
             entity.Property(e => e.Id).HasColumnName("ID");
+            entity.Property(e => e.Foto).IsRequired();
         });
 
         modelBuilder.Entity<Pedido>(entity =>
@@ -62,6 +64,7 @@ public partial class BrasilenhaContext : DbContext
 
             entity.Property(e => e.Id).HasColumnName("ID");
             entity.Property(e => e.CodigoPedido)
+                .IsRequired()
                 .HasMaxLength(12)
                 .IsUnicode(false);
             entity.Property(e => e.DataPedido).HasColumnType("datetime");
@@ -105,10 +108,12 @@ public partial class BrasilenhaContext : DbContext
 
             entity.Property(e => e.Id).HasColumnName("ID");
             entity.Property(e => e.Descrição)
+                .IsRequired()
                 .HasMaxLength(400)
                 .IsUnicode(false);
             entity.Property(e => e.ImagemId).HasColumnName("ImagemID");
             entity.Property(e => e.NomeProduto)
+                .IsRequired()
                 .HasMaxLength(100)
                 .IsUnicode(false);
             entity.Property(e => e.Valor).HasColumnType("decimal(5, 2)");
@@ -127,16 +132,21 @@ public partial class BrasilenhaContext : DbContext
 
             entity.Property(e => e.Id).HasColumnName("ID");
             entity.Property(e => e.Email)
+                .IsRequired()
                 .HasMaxLength(100)
                 .IsUnicode(false);
             entity.Property(e => e.IsAdm).HasColumnName("isADM");
             entity.Property(e => e.Nome)
+                .IsRequired()
                 .HasMaxLength(100)
                 .IsUnicode(false);
             entity.Property(e => e.Salt)
+                .IsRequired()
                 .HasMaxLength(200)
                 .IsUnicode(false);
-            entity.Property(e => e.Senha).IsUnicode(false);
+            entity.Property(e => e.Senha)
+                .IsRequired()
+                .IsUnicode(false);
         });
 
         OnModelCreatingPartial(modelBuilder);

@@ -7,6 +7,8 @@ import { PedidosComponent } from './pedidos/pedidos.component';
 import { CardapioComponent } from './cardapio/cardapio.component';
 import { TotemOficialBannerInicialComponent } from './totem-oficial-banner-inicial/totem-oficial-banner-inicial.component';
 import { CardsComponent } from './cards/cards.component';
+import { ClientAppStoreComponent } from './client-app-store/client-app-store.component';
+import { ClientAppStorePromotionsComponent } from './client-app-store-promotions/client-app-store-promotions.component';
 
 export const routes: Routes = [
     {path: "", component: LoginComponent},
@@ -16,4 +18,6 @@ export const routes: Routes = [
     {path: "Cardapio", component: CardapioComponent},
     {path: "HomeTotem", component: TotemOficialBannerInicialComponent},
     {path: "Cards", component: CardsComponent},
+    {path: "ClientApp", component: ClientAppStoreComponent},
+    {path: "ClientAppPromotions", component: ClientAppStorePromotionsComponent}
 ];

@@ -1159,6 +1159,16 @@
         "runtime": {
           "lib/net6.0/Trevisharp.Security.Jwt.dll": {}
         }
+      },
+      "DTO/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/DTO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DTO.dll": {}
+        }
       }
     }
   },
@@ -3318,10 +3328,16 @@
         "trevisharp.security.jwt.1.0.0.nupkg.sha512",
         "trevisharp.security.jwt.nuspec"
       ]
+    },
+    "DTO/1.0.0": {
+      "type": "project",
+      "path": "../DTO/DTO.csproj",
+      "msbuildProject": "../DTO/DTO.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "DTO >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 7.0.14",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.14",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.14",
@@ -3346,7 +3362,7 @@
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\disrct\\Desktop\\APIMY\\My-Restaurant-API\\Brasilenha\\Backend\\NuGet.Config",
+        "C:\\Users\\disrct\\Desktop\\NuGet.Config",
         "C:\\Users\\disrct\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -3363,7 +3379,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "c:\\Users\\disrct\\Desktop\\APIMY\\My-Restaurant-API\\Brasilenha\\DTO\\DTO.csproj": {
+              "projectPath": "c:\\Users\\disrct\\Desktop\\APIMY\\My-Restaurant-API\\Brasilenha\\DTO\\DTO.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

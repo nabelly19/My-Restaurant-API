@@ -7,7 +7,7 @@ public partial class Pedido
 {
     public int Id { get; set; }
 
-    public string CodigoPedido { get; set; } = null!;
+    public string CodigoPedido { get; set; }
 
     public int UsuarioId { get; set; }
 
@@ -15,9 +15,9 @@ public partial class Pedido
 
     public int? CupomId { get; set; }
 
-    public virtual Cupom? Cupom { get; set; }
+    public virtual Cupom Cupom { get; set; }
 
     public virtual ICollection<PedidoProduto> PedidoProdutos { get; set; } = new List<PedidoProduto>();
 
-    public virtual Usuario Usuario { get; set; } = null!;
+    public virtual Usuario Usuario { get; set; }
 }

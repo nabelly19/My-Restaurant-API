@@ -10,6 +10,17 @@ import { CommonModule } from '@angular/common';
 })
 export class NavbarComponent {
   @Input()
-  tituloDaNav: string = "";
+  tituloDaNav: string = "Outras opções";
 
+  @Input()
+  Content1: string = "op1";
+
+  @Input()
+  Content2: string = "op1";
+
+  @Input()
+  Content3: string = "op3";
+
+  @Input()
+  funcao: any = () => { };
 }

@@ -13,7 +13,7 @@ public partial class PedidoProduto
 
     public int Quantidade { get; set; }
 
-    public virtual Pedido Pedido { get; set; } = null!;
+    public virtual Pedido Pedido { get; set; }
 
-    public virtual Produto Produto { get; set; } = null!;
+    public virtual Produto Produto { get; set; }
 }

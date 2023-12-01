@@ -5,7 +5,7 @@ namespace Backend.Services;
 
 using Backend.Model;
 
-public interface IPedidoRepository {
+public interface IPedidoService {
     Task<int> CriarPedido(int usuarioId);
     Task CancelarPedido(int pedidoId);
     Task<List<Produto>> Cardapio(int pedidoId);

@@ -8,11 +8,11 @@ namespace Backend.Services;
 
 using Backend.Model;
 
-public class PedidoRepository : IPedidoRepository
+public class PedidoService : IPedidoService
 {
 
     private readonly BrasilenhaContext ctx;
-    public PedidoRepository(BrasilenhaContext ctx)
+    public PedidoService(BrasilenhaContext ctx)
         => this.ctx = ctx;
     public Task AdProduto(int pedidoId, int produtoId)
     {
@@ -63,7 +63,7 @@ public class PedidoRepository : IPedidoRepository
         throw new NotImplementedException();
     }
 
-    ///////////////////////////////////////////////
+    // FUNCOES USADAS
 
     private async Task<Pedido> getPedido(int pedidoId)
     {

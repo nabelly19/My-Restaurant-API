@@ -18,9 +18,8 @@
 }
     
 .card {
-    width: 29rem;
-    height:39rem;
-    margin-top: 8%;
+    width: 30rem;
+    height:43rem;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-color: #463e31;
     border-radius: 4%;
@@ -65,3 +64,52 @@ input:focus {
     height: 90px;
     
 }
+
+.goToCadastro a{
+    color: #e6e6e6;
+    text-decoration: none;
+    display: flex;
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1300px){
+    
+   
+}
+
+@media screen and (min-width: 800px) and (max-width: 1300px) {
+
+   
+
+}
+
+@media screen and (min-width: 501px) and (max-width: 1042px){
+
+    .fundo{
+        background-color: black;
+    }
+    
+}
+
+@media screen and (min-width: 414px ) and (max-width: 500px) {
+
+    .fundo{
+        background-color: black;
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 413px){
+
+    .fundo{
+        background-color: black;
+    }
+
+}
+
+@media screen and (max-width: 280px) {
+  
+    .fundo{
+        background-color: black;
+    }
+    
+  }
+

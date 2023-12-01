@@ -7,7 +7,7 @@ public partial class Imagem
 {
     public int Id { get; set; }
 
-    public byte[] Foto { get; set; } = null!;
+    public byte[] Foto { get; set; }
 
     public virtual ICollection<Produto> Produtos { get; set; } = new List<Produto>();
 }

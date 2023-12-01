@@ -10,12 +10,16 @@ import { CommonModule } from '@angular/common';
   styleUrl: './cards.component.css'
 })
 export class CardsComponent {
+
   @Input()
   imagem_card: string = "";
   @Input()
   id: string = "";
   @Input()
   content2: string = "";
+
+  @Input()
+  css: string = "";
   
   dataBsTarget: string = '"data-bs-target=' + this.id + '"';
   ariaControls: string = '"aria-controls="' + this.id + '"';

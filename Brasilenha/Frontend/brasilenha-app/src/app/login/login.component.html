@@ -1,7 +1,6 @@
 <div class="fundo">
-<a href="Totem" routerLinkActive="active">APARECE AI VIADO KKKKK</a> 
     <div class="row">
-      <div class="col-sm-5 mb-5 mt-5 mb-sm-0 mx-auto">
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-5 mt-5 mb-sm-0 mx-auto">
         <div class="card">
           <h5 class="card-header mx-auto">Faça seu login para continuar</h5> 
   
@@ -19,16 +18,18 @@
                   id="nome"
                   class="form-control mx-auto mb-3 input-ico"
                   placeholder="Nome"
+                  [(ngModel)]="username"
                 />
 
-                <label for="email" class="mt-3"><h5>Email:</h5></label>
+                <!-- <label for="email" class="mt-3"><h5>Email:</h5></label>
                 <input
                   type="text"
                   name="email"
                   id="email"
                   class="form-control mx-auto mb-3 input-ico"
                   placeholder="Email"
-                />
+                  [(ngModel)]="email"
+                /> -->
   
                 <label for="senha" class="mt-3"><h5>Senha:</h5></label>
                 <input
@@ -37,17 +38,22 @@
                   id="senha"
                   class="form-control mx-auto"
                   placeholder="Sua Senha:"
+                  [(ngModel)]="senha"
                 />
               </div>
   
               <div class="col-12 mx-auto">
-                <input
+                <button
                   type="button"
                   class="btn mx-auto mt-5 mb-5 btn-lg"
-                  value="Entrar"
-                />
+                  (click)="logar()"
+                >Entrar</button>
+                <a href="Totem" routerLinkActive="active">APARECE AI VIADO KKKKK</a> 
               </div>
             </form>
+            <div class="goToCadastro col-12 mx-auto">
+            <a href="#">Não possui Login? Cadastre-se</a>
+          </div>
           </div>
         </div> 
       </div>

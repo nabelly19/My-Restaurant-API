@@ -1,14 +1,22 @@
 <app-navbar
-  [tituloDaNav]="'CADASTRAR'"
-  [Content1]="'ADICIONAR PRATO AO CARDÁPIO'"
-  [Content2]="'ADICIONAR CUPOM PROMOCIONAL'"
-  [Content3]="'Cadastrar novo Administrador'"
-  [funcao]="option1"
+  [tituloDaNav]="'CONTATO'"
+  [Content1]="'Entre em contato por Telefone'"
+  [Content2]="'Entre em contato por Whatsapp'"
+  [Content3]="'Relatar um problema'"
+
 ></app-navbar>
 
-<div class="title">
-    <h1>Cardápio</h1>
+<div class="d-flex justify-content-between align-items-center">
+    <div class="title">
+        <h1>Cardápio</h1>
+    </div>
+    <div class="voltar">
+        <a href="ClientApp">
+            <button type="button" class="btn btn-secondary">Voltar</button>
+        </a>
+    </div>
 </div>
+
 <div class="container">
 <div class="row col-12 mx-auto box">
     <div class="col">
