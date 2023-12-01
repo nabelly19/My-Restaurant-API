@@ -65,7 +65,9 @@ input:focus {
     
 }
 
-.goToCadastro a{
+.button {
+    background-color: transparent;
+    border: none;
     color: #e6e6e6;
     text-decoration: none;
     display: flex;

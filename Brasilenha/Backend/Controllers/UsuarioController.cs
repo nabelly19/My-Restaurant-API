@@ -40,7 +40,7 @@ public class UsuarioController : ControllerBase
             if (senha != realSenha)
                 return Unauthorized("Senha incorreta");
 
-            var jwt = await seguranca.GerarJwt(new {
+            var jwt = crypto.GetToken(new {
                 id = logarUsuario.Id
             });
 

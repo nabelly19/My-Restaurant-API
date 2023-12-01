@@ -1,0 +1,28 @@
+<p>
+    <mat-form-field appearance="fill">
+        <mat-label>Usuário</mat-label>
+        <input matInput placeholder="Meu Usuário"
+            [(ngModel)]="username"/>
+    </mat-form-field>
+</p>
+
+<p>
+    <mat-form-field appearance="fill">
+        <mat-label>Senha</mat-label>
+        <input placeholder="Minha Senha" matInput type="password"
+            [(ngModel)]="senha"/>
+    </mat-form-field>
+</p>
+
+<p>
+    <mat-form-field appearance="fill">
+        <mat-label>Confirmar Senha</mat-label>
+        <input matInput type="password" placeholder="Confirme sua Senha"
+            [(ngModel)]="confirmasenha"/>
+    </mat-form-field>
+</p>
+
+<button mat-flat-button color="primary"
+(click)="criar()">
+    Criar
+</button>

@@ -3380,8 +3380,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "c:\\Users\\disrct\\Desktop\\APIMY\\My-Restaurant-API\\Brasilenha\\DTO\\DTO.csproj": {
-              "projectPath": "c:\\Users\\disrct\\Desktop\\APIMY\\My-Restaurant-API\\Brasilenha\\DTO\\DTO.csproj"
+            "C:\\Users\\disrct\\Desktop\\APIMY\\My-Restaurant-API\\Brasilenha\\DTO\\DTO.csproj": {
+              "projectPath": "C:\\Users\\disrct\\Desktop\\APIMY\\My-Restaurant-API\\Brasilenha\\DTO\\DTO.csproj"
             }
           }
         }

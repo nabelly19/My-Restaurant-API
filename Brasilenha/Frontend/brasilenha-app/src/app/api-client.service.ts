@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ApiClientService {
-  backend = 'http://localhost:4200/'
+  backend = 'http://localhost:5146/'
 
   constructor(private http: HttpClient) { }
 
