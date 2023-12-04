@@ -24,15 +24,16 @@ export class LoginComponent {
     private router: Router) {}
 
     username: string = ""
-    email: string = ""
     senha: string = ""
+    isAdm: boolean = false
 
     logar()
     {
       this.client.login({
         login: this.username,
-        email: this.email,
-        senha: this.senha
+        email: "",
+        senha: this.senha,
+        isAdm: this.isAdm
       }, (result: any) => {
         if(result == null)
         {
@@ -68,6 +69,7 @@ export class NewUserDialog
   username: string = ""
   email: string = ""
   senha: string = ""
+  isAdm: boolean = false
   confirmasenha: string = ""
 
   constructor(public dialogRef: MatDialogRef<NewUserDialog>,
@@ -79,7 +81,7 @@ export class NewUserDialog
         login: this.username,
         email: this.email,
         senha: this.senha,
-        
+        isAdm: this.isAdm
       })
 
       this.dialogRef.close()

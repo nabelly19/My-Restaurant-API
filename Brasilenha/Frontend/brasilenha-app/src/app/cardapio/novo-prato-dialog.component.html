@@ -1,27 +1,28 @@
-<!-- <p>
+<p>
     <mat-form-field appearance="fill">
-        <mat-label>Nome do Produto:</mat-label>
-        <input matInput placeholder="Nome do Novo Produto:"
+        <mat-label>Nome</mat-label>
+        <input matInput
             [(ngModel)]="nomeProduto"/>
     </mat-form-field>
-</p>
-
-<p>
+  </p>
+  
+  <p>
     <mat-form-field appearance="fill">
-        <mat-label>Cupom</mat-label>
-        <input matInput placeholder="Cupom"
-            [(ngModel)]="cupomProduto"/>
+        <mat-label>Descricao</mat-label>
+        <input matInput 
+            [(ngModel)]="descricao"/>
     </mat-form-field>
-</p>
-
-<p>
+  </p>
+  
+  <p>
     <mat-form-field appearance="fill">
-        <mat-label>Descrição</mat-label>
-        <input matInput placeholder="Descricao do Novo Produto"
-            [(ngModel)]="descricaoProduto"/>
+        <mat-label>Preco</mat-label>
+        <input matInput type="n"
+            [(ngModel)]="valor"/>
     </mat-form-field>
-</p> -->
-
-<button mat-flat-button color="primary">
-    Cadastrar
-</button>
+  </p>
+  
+  <button mat-flat-button color="primary"
+  (click)="criar()">
+    Criar
+  </button>

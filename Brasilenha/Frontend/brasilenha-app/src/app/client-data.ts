@@ -1,6 +1,6 @@
 export interface ClientData {
     login: string;
-    email: string;
     senha: string;
-
+    email: string;
+    isAdm: boolean;
 }

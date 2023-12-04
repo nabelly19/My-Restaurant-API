@@ -1,15 +1,23 @@
 <p>
     <mat-form-field appearance="fill">
         <mat-label>Usuário</mat-label>
-        <input matInput placeholder="Meu Usuário"
+        <input matInput placeholder="Seu Usuário"
             [(ngModel)]="username"/>
     </mat-form-field>
 </p>
 
 <p>
     <mat-form-field appearance="fill">
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="Seu Email"
+            [(ngModel)]="email"/>
+    </mat-form-field>
+</p>
+
+<p>
+    <mat-form-field appearance="fill">
         <mat-label>Senha</mat-label>
-        <input placeholder="Minha Senha" matInput type="password"
+        <input placeholder="Sua Senha" matInput type="password"
             [(ngModel)]="senha"/>
     </mat-form-field>
 </p>

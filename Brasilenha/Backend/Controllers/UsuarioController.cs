@@ -52,7 +52,7 @@ public class UsuarioController : ControllerBase
         [EnableCors("DefaultPolicy")]
         public async Task<IActionResult> Criar(
             [FromBody] UsuarioData usuario,
-            [FromServices] UsuarioService service)
+            [FromServices] IUsuarioService service)
         {
             var erros = new List<string>();
             if(usuario is null || usuario.Login is null)

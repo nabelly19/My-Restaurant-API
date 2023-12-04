@@ -29,6 +29,7 @@ public class UsuarioService : IUsuarioService
             data.Senha, salt
         );
         usuario.Salt = salt;
+        usuario.IsAdm = false;
 
         this.ctx.Add(usuario);
         await this.ctx.SaveChangesAsync();
