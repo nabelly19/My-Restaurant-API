@@ -10,20 +10,40 @@ using Backend.Model;
 using Model;
 using DTO;
 
+
 public class ProdutoService : IProdutoService
 {
-    public Task Criar(ProdutoData produto)
+
+    BrasilenhaContext ctx;
+    ISegurancaService seguranca;
+    public ProdutoService(BrasilenhaContext ctx, ISegurancaService seguranca)
     {
-        throw new NotImplementedException();
+        this.ctx = ctx;
+        this.seguranca = seguranca;
+    }
+    public async Task Criar(ProdutoData data)
+    {
+        Produto produto = new()
+        {
+            NomeProduto = data.NomeProduto,
+            Descrição = data.Descricao,
+            Valor = data.Valor
+        };
+
+        this.ctx.Add(produto);
+        await this.ctx.SaveChangesAsync();
     }
 
-    public Task<List<Produto>> Pegar()
-    {
-        throw new NotImplementedException();
-    }
+    public async Task<List<Produto>> Pegar()
+        => await this.ctx.Produtos.ToListAsync();
 
-    public Task<Produto> PegarpeloNome(string Nome)
+    public async Task<Produto> PegarpeloNome(string Nome)
     {
-        throw new NotImplementedException();
+        var query = 
+            from product in this.ctx.Produtos
+            where product.NomeProduto == Nome
+            select product;
+
+        return await query.FirstOrDefaultAsync();
     }
 }

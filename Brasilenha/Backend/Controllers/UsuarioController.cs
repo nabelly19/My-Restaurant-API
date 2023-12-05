@@ -10,6 +10,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Backend.Controllers;
 
+using System.Threading;
 using DTO;
 using Model;
 using Services;
@@ -54,13 +55,15 @@ public class UsuarioController : ControllerBase
             [FromBody] UsuarioData usuario,
             [FromServices] IUsuarioService service)
         {
+
             var erros = new List<string>();
-            if(usuario is null || usuario.Login is null)
+            if(usuario is null || usuario.Login is null || usuario.Email is null || usuario.Senha is null)
                 erros.Add("É obrigatório informar um login.");
             if(usuario.Login.Length < 5)
                 erros.Add("O Login deve conter mais de 5 caracteres");
-            if(erros.Count > 0)
-                return BadRequest(erros);
+
+            if(erros.Count() > 0)
+                return BadRequest(new { message = "Erro ao criar usuário", errors = erros });
 
             await service.Criar(usuario);
             return Ok();

@@ -17,7 +17,6 @@
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\disrct\\Desktop\\NuGet.Config",
           "C:\\Users\\disrct\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -35,8 +34,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "c:\\Users\\disrct\\Desktop\\APIMY\\My-Restaurant-API\\Brasilenha\\DTO\\DTO.csproj": {
-                "projectPath": "c:\\Users\\disrct\\Desktop\\APIMY\\My-Restaurant-API\\Brasilenha\\DTO\\DTO.csproj"
+              "C:\\Users\\disrct\\Desktop\\APIMY\\My-Restaurant-API\\Brasilenha\\DTO\\DTO.csproj": {
+                "projectPath": "C:\\Users\\disrct\\Desktop\\APIMY\\My-Restaurant-API\\Brasilenha\\DTO\\DTO.csproj"
               }
             }
           }
@@ -97,20 +96,19 @@
         }
       }
     },
-    "c:\\Users\\disrct\\Desktop\\APIMY\\My-Restaurant-API\\Brasilenha\\DTO\\DTO.csproj": {
+    "C:\\Users\\disrct\\Desktop\\APIMY\\My-Restaurant-API\\Brasilenha\\DTO\\DTO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\disrct\\Desktop\\APIMY\\My-Restaurant-API\\Brasilenha\\DTO\\DTO.csproj",
+        "projectUniqueName": "C:\\Users\\disrct\\Desktop\\APIMY\\My-Restaurant-API\\Brasilenha\\DTO\\DTO.csproj",
         "projectName": "DTO",
-        "projectPath": "c:\\Users\\disrct\\Desktop\\APIMY\\My-Restaurant-API\\Brasilenha\\DTO\\DTO.csproj",
+        "projectPath": "C:\\Users\\disrct\\Desktop\\APIMY\\My-Restaurant-API\\Brasilenha\\DTO\\DTO.csproj",
         "packagesPath": "C:\\Users\\disrct\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\disrct\\Desktop\\APIMY\\My-Restaurant-API\\Brasilenha\\DTO\\obj\\",
+        "outputPath": "C:\\Users\\disrct\\Desktop\\APIMY\\My-Restaurant-API\\Brasilenha\\DTO\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "c:\\Users\\disrct\\Desktop\\NuGet.Config",
           "C:\\Users\\disrct\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"

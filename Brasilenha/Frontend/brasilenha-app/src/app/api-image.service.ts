@@ -5,7 +5,7 @@ import { defaultEquals } from '@angular/core/primitives/signals';
 @Injectable({
   providedIn: 'root'
 })
-export class ApiClientService {
+export class ApiImageService {
   backend = 'http://localhost:5146/'
 
   constructor(private http: HttpClient) { }

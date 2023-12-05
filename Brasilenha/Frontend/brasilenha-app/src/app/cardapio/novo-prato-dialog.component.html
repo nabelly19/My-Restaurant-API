@@ -1,28 +1,24 @@
-<p>
-    <mat-form-field appearance="fill">
-        <mat-label>Nome</mat-label>
-        <input matInput
-            [(ngModel)]="nomeProduto"/>
-    </mat-form-field>
-  </p>
-  
-  <p>
-    <mat-form-field appearance="fill">
-        <mat-label>Descricao</mat-label>
-        <input matInput 
-            [(ngModel)]="descricao"/>
-    </mat-form-field>
-  </p>
-  
-  <p>
-    <mat-form-field appearance="fill">
-        <mat-label>Preco</mat-label>
-        <input matInput type="n"
-            [(ngModel)]="valor"/>
-    </mat-form-field>
-  </p>
-  
-  <button mat-flat-button color="primary"
-  (click)="criar()">
-    Criar
-  </button>
+<div class="container">
+  <div class="container">
+    <h1>Cadastrar novo Produto:</h1>
+  </div>
+  <div class="input mb-3">
+		<p class="text">Nome:</p>
+		<input type="text" class="form-control shadow inputt" aria-label="default input example" [(ngModel)]="nomeProduto" />
+
+    <p class="text">Preço:</p>
+    <input type="number" class="form-control shadow inputt" aria-label="default input example" [(ngModel)]="valor" />
+
+    <p class="text">Foto:</p>
+    <input
+      type="file" #file
+      class="form-control shadow inputt mb-5"
+      aria-label="default input example"
+      (change)="uploadFile(file.files)"/>
+
+		<p class="text">Descrição:</p>
+		<input type="text" class="form-control shadow inputt" aria-label="default input example"  [(ngModel)]="descricao"/>
+
+  </div>
+  <button class="btn btn-success shadow" style="margin: 4%;" (click)="criar()"> Adicionar Produto </button><br/>
+</div>
