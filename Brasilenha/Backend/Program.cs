@@ -1,3 +1,4 @@
+
 using System;
 using Backend.Model;
 using Backend.Services;
@@ -14,6 +15,7 @@ builder.Services.AddScoped<BrasilenhaContext>();
 builder.Services.AddTransient<IUsuarioService, UsuarioService>();
 builder.Services.AddTransient<ISegurancaService, SegurancaService>();
 builder.Services.AddTransient<IPedidoService, PedidoService>();
+builder.Services.AddTransient<IProdutoService, ProdutoService>();
 builder.Services.AddSingleton<CryptoService>(p => new(){
     InternalKeySize = 24,
     UpdatePeriod = TimeSpan.FromDays(1)

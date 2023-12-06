@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="container mt-5 mb-3">
+      <h1>Cadastrar novo Cupom:</h1>
+    </div>
+    <div class="input mb-3">
+          <p class="text mt-5">Código:</p>
+          <input type="text" class="form-control shadow inputt" aria-label="default input example" [(ngModel)]="codigo" />
+  
+      <p class="text mt-5">Valor:</p>
+      <input type="text" class="form-control shadow inputt" aria-label="default input example" [(ngModel)]="valor" />
+  
+    </div>
+    <button class="btn btn-success shadow mt-5" style="margin: 4%;" (click)="criar()"> Adicionar Cupom </button><br/>
+  </div>

@@ -1,24 +1,24 @@
 <div class="container">
-  <div class="container">
+  <div class="container mt-5 mb-3">
     <h1>Cadastrar novo Produto:</h1>
   </div>
   <div class="input mb-3">
-		<p class="text">Nome:</p>
+		<p class="text mt-5">Nome:</p>
 		<input type="text" class="form-control shadow inputt" aria-label="default input example" [(ngModel)]="nomeProduto" />
 
-    <p class="text">Preço:</p>
+    <p class="text mt-5">Preço:</p>
     <input type="number" class="form-control shadow inputt" aria-label="default input example" [(ngModel)]="valor" />
 
-    <p class="text">Foto:</p>
+    <p class="text mt-5">Foto:</p>
     <input
       type="file" #file
-      class="form-control shadow inputt mb-5"
+      class="form-control shadow inputt"
       aria-label="default input example"
       (change)="uploadFile(file.files)"/>
 
-		<p class="text">Descrição:</p>
-		<input type="text" class="form-control shadow inputt" aria-label="default input example"  [(ngModel)]="descricao"/>
+		<p class="text mt-5">Descrição:</p>
+		<input type="text" class="form-control shadow inputt " aria-label="default input example"  [(ngModel)]="descricao"/>
 
   </div>
-  <button class="btn btn-success shadow" style="margin: 4%;" (click)="criar()"> Adicionar Produto </button><br/>
+  <button class="btn btn-success shadow mt-5" style="margin: 4%;" (click)="criar()"> Adicionar Produto </button><br/>
 </div>

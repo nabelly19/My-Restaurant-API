@@ -23,4 +23,10 @@ export class NavbarComponent {
 
   @Input()
   funcao: any = () => { };
+
+  @Input()
+  funcao2: any = () => { };
+
+  @Input()
+  funcao3: any = () => { };
 }

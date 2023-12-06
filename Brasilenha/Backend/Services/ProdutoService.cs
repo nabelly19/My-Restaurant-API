@@ -27,7 +27,8 @@ public class ProdutoService : IProdutoService
         {
             NomeProduto = data.NomeProduto,
             Descrição = data.Descricao,
-            Valor = data.Valor
+            Valor = data.Valor,
+            ImagemId = data.IdImg
         };
 
         this.ctx.Add(produto);

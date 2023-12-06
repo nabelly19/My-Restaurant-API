@@ -40,7 +40,8 @@ go
 
 create table Cupom (
 	ID int identity primary key,
-	Codigo varchar(12) not null
+	Codigo varchar(12) not null,
+	Valor float not null
 )
 go
 

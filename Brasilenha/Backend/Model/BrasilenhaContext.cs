@@ -35,7 +35,7 @@ public partial class BrasilenhaContext : DbContext
     {
         modelBuilder.Entity<Cupom>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Cupom__3214EC27C32B323A");
+            entity.HasKey(e => e.Id).HasName("PK__Cupom__3214EC27D792AD96");
 
             entity.ToTable("Cupom");
 
@@ -48,7 +48,7 @@ public partial class BrasilenhaContext : DbContext
 
         modelBuilder.Entity<Imagem>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Imagem__3214EC27E07CB063");
+            entity.HasKey(e => e.Id).HasName("PK__Imagem__3214EC273469DFD8");
 
             entity.ToTable("Imagem");
 
@@ -58,7 +58,7 @@ public partial class BrasilenhaContext : DbContext
 
         modelBuilder.Entity<Pedido>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Pedido__3214EC27BEFCB5F7");
+            entity.HasKey(e => e.Id).HasName("PK__Pedido__3214EC27D7062402");
 
             entity.ToTable("Pedido");
 
@@ -81,7 +81,7 @@ public partial class BrasilenhaContext : DbContext
 
         modelBuilder.Entity<PedidoProduto>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__PedidoPr__3214EC27067E9C35");
+            entity.HasKey(e => e.Id).HasName("PK__PedidoPr__3214EC271C49D111");
 
             entity.ToTable("PedidoProduto");
 
@@ -102,7 +102,7 @@ public partial class BrasilenhaContext : DbContext
 
         modelBuilder.Entity<Produto>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Produto__3214EC27BD038AC1");
+            entity.HasKey(e => e.Id).HasName("PK__Produto__3214EC27D3C51E70");
 
             entity.ToTable("Produto");
 
@@ -126,7 +126,7 @@ public partial class BrasilenhaContext : DbContext
 
         modelBuilder.Entity<Usuario>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Usuario__3214EC2784C3529A");
+            entity.HasKey(e => e.Id).HasName("PK__Usuario__3214EC277EC5D71A");
 
             entity.ToTable("Usuario");
 
