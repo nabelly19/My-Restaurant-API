@@ -39,23 +39,26 @@
       <p>CONFIRÁ JÁ AS NOVAS OPÇÕES DE NOSSO CARDÁPIO </p>
     </div>
 
+    <div class="linha2">
+      <ul>
+        <li><a href="Carrinho" routerLinkActive="active">Seu Carrinho <i class="bi bi-cart3"></i></a></li>
+      </ul>
+    </div>
+
       <form class="d-flex mt-5" role="search">
         <input class="form-control me-3" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-secondary" type="submit">Search</button>
       </form>
 
     <div class="conteudo">
-    <app-cards [id]="'elem1'" ></app-cards>
-    <app-cards [id]="'elem2'" ></app-cards>
-    <app-cards [id]="'elem3'" ></app-cards>
+    
+    @for (item of produtos; track $index) {
+      <app-cards [id]="item.id" [css]='""' [valor]="item.preco" [descricao]="item.descricao"></app-cards>
+    }
 
-    <app-cards [id]="'elem4'" ></app-cards>
-    <app-cards [id]="'elem5'"></app-cards>
-    <app-cards [id]="'elem6'"></app-cards>
-
-    <app-cards [id]="'elem7'"></app-cards>
-    <app-cards [id]="'elem8'"></app-cards>
-    <app-cards [id]="'elem9'"></app-cards>
+    <!-- <ng-container *ngFor="let item of produtos; index as i">
+      <app-cards [id]="item.id" [valor]="item.preco" [descricao]="item.descricao"></app-cards>
+    </ng-container> -->
 
     </div>
     

@@ -21,4 +21,8 @@ export class ApiProductService {
   uploadImage(image: FormData): Observable<any> {
     return this.http.post('produto/imagem', image);
   }
+
+  getAll() {
+    return this.http.get('produto');
+  }
 }

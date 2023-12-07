@@ -15,6 +15,7 @@ using Model;
 using System.Security.Cryptography;
 using Trevisharp.Security.Jwt;
 using System.ComponentModel;
+using Backend.Services;
 
 [ApiController]
 [Route("cupom")]
@@ -32,7 +33,7 @@ public class CupomController : ControllerBase
             erros.Add("O formulário deve ser preenchido");
       
         if(erros.Count > 0)
-            return BadRequest(erros)/
+            return BadRequest(erros);
 
         await servico.Criar(cupom);
         return Ok();
@@ -42,27 +43,28 @@ public class CupomController : ControllerBase
     [HttpGet()]
     [EnableCors("DefaultPolicy")]
     public async Task<IActionResult> Pegar(
-        [FromServices]ICupomService serviceo
+        [FromServices]ICupomService servico
     )
     {
-        var c = await servico.Pegar();
+        var v = await servico.Pegar();
         var erros = new List<string>();
         if (erros.Count > 0)
             return BadRequest(erros);
-        return Ok(new{c});
+        return Ok(new{v});
     }
 
     [HttpPost("pegarCupom")]
     [EnableCors("DefaultPolicy")]
     public async Task<IActionResult> PegarPeloCodigo(
-        [FromServices]ICupomService servico
+        [FromServices]ICupomService servico,
+        [FromBody]CupomData cupom
     )
     {
-        var c = await servico.PegarPeloCodigo(cupom);
-        if(c == null)
+        var v = await servico.PegarPeloCodigo(cupom);
+        if(v == null)
             return Ok(0);
 
-        var valor = c.Valor;
+        var valor = v.Valor;
         var erros = new List<string>();
 
         if(erros.Count > 0)

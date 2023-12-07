@@ -9,6 +9,7 @@ import { MatDialog, MatDialogModule, MatDialogRef } from '@angular/material/dial
 import { ClientServiceService } from '../client-service.service';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
+import { NONE_TYPE } from '@angular/compiler';
 
 @Component({
   selector: 'app-login',
@@ -45,6 +46,10 @@ export class LoginComponent {
 
           console.log("result: ", result);
 
+          console.log(result.isAdm)
+          if(result.isAdm == true) 
+            this.router.navigate(['Totem']) ;
+          else
             this.router.navigate(['ClientApp']);
 
         }

@@ -9,6 +9,7 @@ import { TotemOficialBannerInicialComponent } from './totem-oficial-banner-inici
 import { CardsComponent } from './cards/cards.component';
 import { ClientAppStoreComponent } from './client-app-store/client-app-store.component';
 import { ClientAppStorePromotionsComponent } from './client-app-store-promotions/client-app-store-promotions.component';
+import { CarrinhoComponent } from './carrinho/carrinho.component';
 
 export const routes: Routes = [
     {path: "", component: LoginComponent},
@@ -19,5 +20,6 @@ export const routes: Routes = [
     {path: "HomeTotem", component: TotemOficialBannerInicialComponent},
     {path: "Cards", component: CardsComponent},
     {path: "ClientApp", component: ClientAppStoreComponent},
-    {path: "ClientAppPromotions", component: ClientAppStorePromotionsComponent}
+    {path: "ClientAppPromotions", component: ClientAppStorePromotionsComponent},
+    {path: "Carrinho", component: CarrinhoComponent}
 ];

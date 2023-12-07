@@ -62,5 +62,10 @@ create table PedidoProduto (
 )
 go
 
+UPDATE Usuario
+SET isADM = 1
+WHERE isADM = 0
 
+select * From Usuario
 
+select * from Imagem

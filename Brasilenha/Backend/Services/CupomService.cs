@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace Backend.Services;
 
-using Backend.Model;
 using DTO;
 using Model;
 
@@ -19,6 +18,7 @@ public class CupomService : ICupomService
     }
     public async Task Criar(CupomData data)
     {
+        
         Cupom cupom = new()
         {
             Codigo = data.Codigo,
@@ -29,13 +29,17 @@ public class CupomService : ICupomService
         await this.ctx.SaveChangesAsync();
     }
 
-    public Task<List<Cupom>> Pegar()
-    {
-        throw new NotImplementedException();
-    }
+    public async Task<List<Cupom>> Pegar()
+        => await this.ctx.Cupoms.ToListAsync();
+    
 
-    public Task<Cupom> PegarPeloCodigo(CupomData cupom)
+    public async Task<Cupom> PegarPeloCodigo(CupomData cupom)
     {
-        throw new NotImplementedException();
+        var query = 
+        from v in ctx.Cupoms
+        where v.Codigo == cupom.Codigo
+        select v;
+
+        return await query.FirstOrDefaultAsync();
     }
 }

@@ -28,72 +28,55 @@ public class ProdutoController : ControllerBase
     [EnableCors("DefaultPolicy")]
 
     public async Task<IActionResult> CriarProduto(
-        [FromBody]ProdutoData produto,
-        [FromServices]IProdutoService servico
+        [FromBody] ProdutoData produto,
+        [FromServices] IProdutoService servico
     )
     {
         var erros = new List<string>();
 
-        if(produto.NomeProduto.Length < 5)
+        if (produto.NomeProduto.Length < 5)
             erros.Add("O produto precisa conter ao menos 5 caracteres");
-        if(produto.Valor < 8)
+        if (produto.Valor < 8)
             erros.Add("O valor mínimo dos produtos são R$8,00");
-        if(produto.Descricao == null)
+        if (produto.Descricao == null)
             erros.Add("Este campo não pode ser nulo");
-        if(produto is null)
+        if (produto is null)
             erros.Add("O formulário deve ser preenchido");
 
-        if(erros.Count > 0) 
+        if (erros.Count > 0)
             return BadRequest(erros);
 
         await servico.Criar(produto);
         return Ok();
     }
 
-    [HttpGet("produto")]
-    [EnableCors("Defaultpolicy")]
+    [HttpGet]
+    [EnableCors("DefaultPolicy")]
     public async Task<IActionResult> VerProduto(
-        [FromBody]ProdutoData produto,
-        [FromServices]IProdutoService servico
+        [FromServices] IProdutoService servico
     )
     {
         var p = await servico.Pegar();
-
-        var erros = new List<string>();
-        if (erros.Count > 0)
-            return BadRequest(erros);
-
-        return Ok(new {p});
+        return Ok(p);
     }
 
-    [HttpGet("produtoporvez")]
-    [EnableCors("Defaultpolicy")]
-    public async Task<ActionResult> VerUmProduto(
-        [FromBody]ProdutoData produto,
-        [FromServices]IProdutoService servico
-    )
-    {
-        var p = await servico.PegarpeloNome(produto.NomeProduto);
-
-        return Ok(new{p});
-    }
 
     [HttpGet("image/{imagemId}")]
     [EnableCors("DefaultPolicy")]
     public async Task<IActionResult> GetImage(
         int imagemId,
-        [FromServices]ISegurancaService seguranca,
-        [FromServices]BrasilenhaContext ctx
+        [FromServices] ISegurancaService seguranca,
+        [FromServices] BrasilenhaContext ctx
     )
     {
-        var query = 
+        var query =
             from image in ctx.Imagems
             where image.Id == imagemId
             select image;
 
         var photo = await query.FirstOrDefaultAsync();
 
-        if(photo is null)
+        if (photo is null)
             return NotFound();
 
         return File(photo.Foto, "image/jpeg");
@@ -103,7 +86,7 @@ public class ProdutoController : ControllerBase
     [HttpPost("imagem")]
     [EnableCors("DefaultPolicy")]
     public async Task<IActionResult> AddImagem(
-        [FromServices]CryptoService seguranca
+        [FromServices] CryptoService seguranca
     )
     {
         // var jwtData = Request.Form["jwt"];
@@ -126,7 +109,7 @@ public class ProdutoController : ControllerBase
         var file = Request.Form.Files[0];
         if (file.Length < 1)
             return BadRequest();
-        
+
         using MemoryStream ms = new MemoryStream();
         await file.CopyToAsync(ms);
         var data = ms.GetBuffer();
@@ -138,7 +121,8 @@ public class ProdutoController : ControllerBase
         ctx.Add(img);
         await ctx.SaveChangesAsync();
 
-        return Ok(new {
+        return Ok(new
+        {
             imgId = img.Id
         });
     }

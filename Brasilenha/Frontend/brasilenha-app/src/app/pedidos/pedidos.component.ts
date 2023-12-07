@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NavbarComponent } from '../navbar/navbar.component';
 
@@ -11,5 +11,8 @@ import { NavbarComponent } from '../navbar/navbar.component';
 })
 export class PedidosComponent {
  titulo: string = "Pedidos";
+
+ @Input()
+  pedidosRestantes: string = "Sem Pedidos";
 
 }
