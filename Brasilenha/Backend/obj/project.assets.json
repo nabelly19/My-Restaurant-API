@@ -3346,41 +3346,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\disrct\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Nabelly\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\disrct\\Desktop\\APIMY\\My-Restaurant-API\\Brasilenha\\Backend\\Backend.csproj",
+      "projectUniqueName": "C:\\Users\\Nabelly\\Desktop\\xoxo\\My-Restaurant-API\\Brasilenha\\Backend\\Backend.csproj",
       "projectName": "Backend",
-      "projectPath": "C:\\Users\\disrct\\Desktop\\APIMY\\My-Restaurant-API\\Brasilenha\\Backend\\Backend.csproj",
-      "packagesPath": "C:\\Users\\disrct\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\disrct\\Desktop\\APIMY\\My-Restaurant-API\\Brasilenha\\Backend\\obj\\",
+      "projectPath": "C:\\Users\\Nabelly\\Desktop\\xoxo\\My-Restaurant-API\\Brasilenha\\Backend\\Backend.csproj",
+      "packagesPath": "C:\\Users\\Nabelly\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Nabelly\\Desktop\\xoxo\\My-Restaurant-API\\Brasilenha\\Backend\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\disrct\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Nabelly\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.311\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "c:\\Users\\disrct\\Desktop\\APIMY\\My-Restaurant-API\\Brasilenha\\DTO\\DTO.csproj": {
-              "projectPath": "c:\\Users\\disrct\\Desktop\\APIMY\\My-Restaurant-API\\Brasilenha\\DTO\\DTO.csproj"
+            "C:\\Users\\Nabelly\\Desktop\\xoxo\\My-Restaurant-API\\Brasilenha\\DTO\\DTO.csproj": {
+              "projectPath": "C:\\Users\\Nabelly\\Desktop\\xoxo\\My-Restaurant-API\\Brasilenha\\DTO\\DTO.csproj"
             }
           }
         }
@@ -3437,7 +3428,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.311\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
